@@ -1,0 +1,85 @@
+.personal {grid-area: personal;}
+.seleccion {grid-area: seleccion;}
+.informacion {grid-area: informacion;}
+.apellidos {grid-area: apellidos;}
+.apellidos_input {grid-area: apellidos_input;}
+.nombre {grid-area: nombre;}
+.nombre_input {grid-area: nombre_input;}
+.sexo {grid-area: sexo;}
+.espacio {grid-area: espacio;}
+.hombre {grid-area: hombre;}
+.mujer {grid-area: mujer;}
+.expediente {grid-area: expediente;}
+.expediente_input {grid-area: expediente_input;}
+.apellidos2 {grid-area: apellidos2;}
+.apellidos_input2 {grid-area: apellidos_input2;}
+.fecha {grid-area: fecha;}
+.fecha_input {grid-area: fecha_input;}
+.importe {grid-area: importe;}
+.importe_input {grid-area: importe_input;}
+.tarjeta {grid-area: tarjeta;}
+.tarjeta_select {grid-area: tarjeta_select;}
+.apellidos2 {grid-area: apellidos2;}
+.apellidos_input2 {grid-area: apellidos_input2;}
+
+body{
+    background-color: rgb(168, 158, 158);
+}
+
+.contenedor{
+    border-color: rgb(168, 158, 158);
+    display: grid;
+    grid-template-areas: 
+    'personal seleccion'
+    'personal seleccion';
+}
+
+.formulario_personal{
+    display: grid;
+    grid-template-areas: 
+    'apellidos apellidos_input'
+    'nombre nombre_input'
+    'sexo hombre'
+    'espacio mujer';
+
+}
+
+.formulario_personal2{
+    display: grid;
+    grid-template-areas: 
+    'apellidos apellidos_input'
+    'nombre nombre_input'
+    'sexo hombre'
+    'espacio mujer';
+
+}
+
+input{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+label{
+    margin-bottom: 10px;
+}
+
+select{
+    margin-bottom: 10px;
+}
+
+.hombre{
+    border-color: rgb(168, 158, 158);
+    height: 20px;
+}
+.mujer{
+    border-color: rgb(168, 158, 158);
+    height: 20px;
+}
+
+.botones{
+    text-align: center;
+}
+
+button{
+    margin-top: 10px;
+}

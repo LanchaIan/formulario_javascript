@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="stilo.css">
+    <script src="validacion.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="personal">
+            <form class="formulario_personal" action="">
+                <label class="apellidos" for="Apellidos">Apellidos</label>
+                <input class="apellidos_input" type="text" id="texto"><br>
+                <label class="nombre" for="Nombre">Nombre</label>
+                <input class="nombre_input" type="text" id="texto"><br>
+                <label class="sexo" for="Sexo">Sexo</label>
+                <a class="espacio"></a>
+                <div class="hombre">
+                    <input type="radio" id="hombre" name="sexo" value="hombre">
+                    <label for="hombre">hombre</label><br>
+                </div>
+                <div class="mujer">
+                    <input type="radio" id="mujer" name="sexo" value="mujer">
+                    <label for="mujer">Mujer</label><br>
+                </div>
+                
+    
+            </form>
+        </div>
+        <div class="seleccion">
+            <form action="formulario_personal2">
+                <label class="expediente" for="expediente">Nº de Expediente</label>
+                <input class="expediente_input" type="text" id="expediente_input">
+                <br>
+                <label class="apellidos2" for="apellidos2">Apellidos</label>
+                <input class="apellidos_input2" type="date" id="apellidos_input2">
+                <br>
+                <label class="fecha" for="fecha">Fecha de Permiso</label>
+                <input class="fecha_input" type="date" id="fecha_input">
+                <br>
+                <label class="importe" for="importe">Importe</label>
+                <input class="importe_input" type="text" id="importe_input">
+                <br>
+                <label class="tarjeta" for="tarjeta">Tipo de Tarjeta</label>
+                <select name="tarjeta_select" id="tarjeta_select" form="carform">
+                    <option value="marter">Master Card</option>
+                    <option value="visa">Visa</option>
+                    <option value="tar_generica">Tarjeta de Crédito Genérica número 3</option>
+                </select>
+                <br>
+                <label class="año_exp" for="fecha">Fecha de Permiso</label>
+                <input class="año_exp_input" type="text" id="fecha"><br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
