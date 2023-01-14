@@ -1,8 +1,8 @@
 .personal {grid-area: personal;}
 .seleccion {grid-area: seleccion;}
 .informacion {grid-area: informacion;}
-.apellidos {grid-area: apellidos;}
-.apellidos_input {grid-area: apellidos_input;}
+.apellido1 {grid-area: apellidos;}
+.apellidos_input1 {grid-area: apellidos_input;}
 .nombre {grid-area: nombre;}
 .nombre_input {grid-area: nombre_input;}
 .sexo {grid-area: sexo;}
@@ -17,17 +17,26 @@
 .fecha_input {grid-area: fecha_input;}
 .importe {grid-area: importe;}
 .importe_input {grid-area: importe_input;}
-.tarjeta {grid-area: tarjeta;}
+.tipo_tarjeta {grid-area: tipo_tarjeta;}
 .tarjeta_select {grid-area: tarjeta_select;}
+.año_exp {grid-area: año_exp;}
+.año_exp_input {grid-area: año_exp_input;}
 .apellidos2 {grid-area: apellidos2;}
-.apellidos_input2 {grid-area: apellidos_input2;}
+.edad {grid-area: edad;}
+.edad_input {grid-area: edad_input;}
+.matricula {grid-area: matricula;}
+.matricula_input {grid-area: matricula_input;}
+.tarjeta {grid-area: tarjeta;}
+.tarjeta_input {grid-area: tarjeta_input;}
+.expiracion {grid-area: expiracion;}
+.expiracion_input {grid-area: expiracion_input;}
 
 body{
-    background-color: rgb(168, 158, 158);
+    background-color: rgb(241, 168, 105);
 }
 
 .contenedor{
-    border-color: rgb(168, 158, 158);
+    border-color: rgb(241, 168, 105);
     display: grid;
     grid-template-areas: 
     'personal seleccion'
@@ -37,20 +46,24 @@ body{
 .formulario_personal{
     display: grid;
     grid-template-areas: 
-    'apellidos apellidos_input'
     'nombre nombre_input'
-    'sexo hombre'
-    'espacio mujer';
+    'apellido1 apellidos_input1'
+    'edad edad_input'
+    'matricula matricula_input'
+    'tarjeta tarjeta_input'
+    'expiracion expiracion_input';
 
 }
 
 .formulario_personal2{
     display: grid;
     grid-template-areas: 
-    'apellidos apellidos_input'
-    'nombre nombre_input'
-    'sexo hombre'
-    'espacio mujer';
+    'expediente expediente_input'
+    'apellidos2 apellidos_input2'
+    'fecha fecha_input'
+    'importe importe_input'
+    'tipo_tarjeta tarjeta_select'
+    'año_exp año_exp_input';
 
 }
 
@@ -65,15 +78,6 @@ label{
 
 select{
     margin-bottom: 10px;
-}
-
-.hombre{
-    border-color: rgb(168, 158, 158);
-    height: 20px;
-}
-.mujer{
-    border-color: rgb(168, 158, 158);
-    height: 20px;
 }
 
 .botones{
